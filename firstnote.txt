@@ -1,1 +1,14 @@
 This is my first note hope it will be added in my git repository
+So, Lets Talk about what we can do with all the things 
+1 Git init
+2 git pull ## if required
+3 git commit -m "Comment pls"
+4 git push origin <branch name> eg.. git push origin main
+5 git log ## to check previous commits
+6 taking the log id from previous commits we can roll back to previous version
+7 git branch to see active branches
+8 git checkout <branch name> ## to move to a specific branch
+9 # Reset to the specified commit, discarding commits after it
+10 git reset --hard a524dcfddb7384f02ce4ca0713566a4105cb59f3
+11 # Force-push the changes to the remote repository
+12 git push origin main --force
