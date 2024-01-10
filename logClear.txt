@@ -1,0 +1,41 @@
+
+Run the following command to initiate an interactive rebase starting from the
+commit before the commit you want to keep (Reterive):
+
+bash
+Copy code
+git rebase -i 530b7eafb42674fc3157666b86132a5c7d6e9b6d^
+Replace 530b7eafb42674fc3157666b86132a5c7d6e9b6d with the commit hash of the
+Reterive commit.
+
+An interactive rebase editor will open. Change the word "pick" to "edit" for
+all the commits you want to remove. Save and close the editor.
+
+For each commit marked for removal, run the following commands:
+
+bash
+Copy code
+git reset HEAD^
+git commit --amend --no-edit
+Repeat these commands for each commit you want to remove.
+
+After amending all the commits, continue the rebase:
+
+bash
+Copy code
+git rebase --continue
+If there are conflicts, Git will pause and allow you to resolve them. Follow
+the prompts to resolve any conflicts.
+
+Once the rebase is complete, force-push the changes to update the remote
+repository:
+
+bash
+Copy code
+git push --force
+Please note that force-pushing will rewrite history, and if others are working
+with the repository, you should communicate the changes to them. Rewriting
+history is generally discouraged on shared branches to avoid confusion and
+collaboration issues. If others have already pulled the previous commits, they
+might face difficulties syncing their local repositories with the rewritten
+history.
