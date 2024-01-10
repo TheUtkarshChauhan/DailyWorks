@@ -1,0 +1,8 @@
+To restore a deleted file 
+git status 
+then
+git restore <File name>
+or use wild card
+git restoere * 
+To reterive all
+
