@@ -12,10 +12,3 @@ git merge dusri
 git add .
 git commit -m "Merge dusri into main"
 git push origin main
-# to delete a branch
-git branch -d dusri
-if branch not fully merged
-git branch -D dusri
-If you want to delete the branch on the remote repository (GitHub), you can
-use:
-git push origin --delete dusri
