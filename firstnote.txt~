@@ -12,5 +12,3 @@ So, Lets Talk about what we can do with all the things
 10 git reset --hard a524dcfddb7384f02ce4ca0713566a4105cb59f3
 11 # Force-push the changes to the remote repository
 12 git push origin main --force
-13 git remote -v ## to show all the active repository
-14 git remote remove origin ## if want to remove specific active repository
