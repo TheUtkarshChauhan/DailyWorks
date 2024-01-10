@@ -5,4 +5,10 @@ git branch new-branch-name
 
 # Switch to the new branch
 git checkout new-branch-name
-
+# merging branches
+# move to main branch
+#then use the merge command
+git merge dusri
+git add .
+git commit -m "Merge dusri into main"
+git push origin main
